@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<section id="into">
+    <header>
+        <a href="/">
+            <img src="/assets/projetos criativos.svg" alt="imagem projetos criativos">
+        </a>
+    </header>
+    
+    <main>
+         <p><strong>Vamos programar!</strong></p>
+    
+        <p>Aqui você encontrará uma coleção de cursos que exploram o potencial da programação!</p>
+    
+        <p><strong>Explore o poder da tecnologia para:</strong></p>
+    
+        <ul style="list-style-type: circle;">
+            <li>Aprender novas habilidades e aprimorar seu conhecimento em programação.</li>
+            <br>
+            <li>Colaborar com outros programadores e designers em projetos empolgantes</li>
+        </ul>
+    
+        <p>E por fim, não deixe de contrubuir com sua ideia!</p>
+    </main>
+   
+    <section id="buttons">
+        <button onclick="onOff()">+ Adicionar Curso</button>
+        <a href="/cursos" class="button">Ver Cursos</a>
+    </section>
+</section>
+   
+<section id="latsideias">
+    {% include "all_cursos.html"%}
+</section>
+
+{% endblock %}

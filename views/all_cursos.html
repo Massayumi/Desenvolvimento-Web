@@ -1,0 +1,14 @@
+{% for curso in cursos %}
+<div class="ideia">
+    <img src="{{curso.image}}" alt="{{curso.title}}">
+    
+    <div class="content">
+        <h3>{{curso.title}}</h3>
+        <p>{{curso.categoria}}</p>
+        <div class="description">
+            {{curso.description}}
+        </div>
+        <a target="_blank" href="{{curso.link}}">ir para o curso </a>
+    </div>
+</div>          
+{% endfor %}

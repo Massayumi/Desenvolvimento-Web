@@ -1,0 +1,297 @@
+body{
+    background: #e5e5e5; 
+    color: #25282b;
+
+    margin: 0; 
+
+    font-family: "Montserrat", sans-serif;
+}
+
+body.hideScroll{
+    overflow: hidden;
+}
+
+
+#container{
+    width: 80%;
+    max-width: 61.25rem;
+    margin: 2.5rem auto;
+
+    display: flex;
+}
+
+#into{
+    width: 18.75rem;
+    margin-right: 1.5rem;
+}
+main{
+    margin-top: 2rem 0;
+    
+}
+
+button{
+    border: none;
+    color: #404549;
+    background: linear-gradient(#5170ff,#ffa3ff);
+    cursor: pointer;
+    width: 8rem;
+    height: 2.3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.4rem 1rem #ffa3ff32;
+    /* rgba(255, 0,  255, 0.16 ); */
+    
+    font-size: 0.86rem;
+    font-weight: bold;
+    line-height: 1.12rem;
+    letter-spacing: 0.06rem ;
+}
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+
+}
+
+button:hover {
+    background: linear-gradient(#ffa3ff,#a98fff);
+    font-weight: bold;
+    
+}
+
+.button{
+    color: #a98fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+}
+
+.ideia{
+    display: flex;
+
+    background-color: whitesmoke;
+
+    padding: 1rem;
+
+    border-radius: 0.5rem;
+
+    box-shadow: 0 0.25rem 1rem -0.5rem black;
+
+    /* box-shadow: 0 0.25rem 1rem -0.5rem rgba(1, 1, 1, 0.1);*/
+
+    margin-bottom: 1.25rem;
+
+}
+
+.ideia img{
+    width: 3.75rem;
+    height: 3.75rem;
+
+    margin-right: 2rem;
+}
+
+.ideia h3{
+    margin: 0;
+}
+
+
+.ideia p{
+ margin: 0.5rem 0;
+ color: #777;
+}
+
+.ideia .description{
+    margin: 1rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: #825dff;
+}
+
+p, .description{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.06rem;
+}
+
+/* modal */ 
+
+#modal{
+
+    background:#a690f0d8;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#modal.addScroll{
+    overflow: auto ;
+}
+#modal .content{
+    margin-top: 3rem;
+    color: white;
+}
+
+#modal .content h1{
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+#modal form{
+    width: 80%;
+    max-width: 50rem;
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+}
+
+.content form div:nth-child(3), 
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+form input, form textarea{
+    width: 100%;
+
+    padding: 0.75rem;
+
+    box-sizing: border-box;
+
+    border-radius: 0.3rem;
+    border: 1px solid rgba(84, 64, 150, 0.5);
+    outline: none;
+    font-size: 1rem;
+}
+
+form label{
+    font-weight:600;
+    line-height: 2rem;
+    letter-spacing: 0.8px;
+}
+
+form a{
+    background: linear-gradient(#5170ff,#ffa3ff);
+    color: #404549;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 2.3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.4rem 1rem #ffa3ff32;    
+    font-size: 0.86rem;
+    align-self: end;
+    transition: 400ms;
+
+}
+
+form a:hover{
+    background: linear-gradient(#ffa3ff,#a98fff);
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+form button{
+    margin-top: 2rem;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+}
+
+#modal.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* cursos.html */ 
+
+#page-cursos #container{
+    display: block;
+}
+
+#page-cursos header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-cursos nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+#page-cursos nav li{
+    list-style-type: none;
+    margin-right: 1rem;
+
+
+}
+
+#page-cursos nav li:last-child{
+    margin-right: 0;
+}
+
+#page-cursos nav li:last-child a {
+    color: white;
+    width: 8rem;
+    height: 2.3rem;
+    background: linear-gradient(#5170ff,#ffa3ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+  }
+
+#page-cursos nav li:last-child a:hover{
+    background: linear-gradient(#ffa3ff,#a98fff);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#page-cursos nav li a{
+    color: #404549;
+    font-weight: bold;
+}
+
+section#title{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title h1{
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+section#ideias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+section#ideias .ideia{
+    margin: 0;
+}
